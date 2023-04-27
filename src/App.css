@@ -1,0 +1,115 @@
+/*  1. Use a more-intuitive box-sizing model. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*  2. Remove default margin  */
+* {
+  margin: 0;
+}
+
+/*  3. Allow percentage-based heights in the application */
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!  4. Add accessible line-height  5. Improve text rendering */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*  6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*  7. Remove built-in form typography styles */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*  8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*  9. Create a root stacking context */
+#root, #__next {
+  isolation: isolate;
+}
+
+/*
+TODO: 
+*/
+
+:Root {
+  --primary-blue: hsl(223, 87%, 63%);
+  --secondary-blue: hsl(223, 100%, 88%);
+  --secondary-red: hsl(354, 100%, 66%);
+  --neutral-gray: hsl(0, 0%, 59%);
+  --neutral-blue: hsl(209, 33%, 12%);
+  --font-size: 1.25rem;
+  --fw-300: 300;
+  --fw-600: 600;
+  --fw-700: 700;
+  --ff: 'Libre Franklin';
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--ff);
+  font-weight: var(--fw-300);
+  text-align: center;
+  padding-inline: 2rem;
+  padding-block: 4rem;
+}
+
+.logo {
+  margin: 0 auto;
+  padding-block: 2rem;
+}
+
+h2 {
+  font-weight: var(--fw-300);
+  color: var(--neutral-gray);
+}
+
+p {
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='email'] {
+  margin-block: 0.5rem;
+  border-radius: 2rem;
+  padding: 0.7rem 2rem;
+  border: 0.1rem solid var(--secondary-blue);
+  font-size: 1rem;
+}
+
+::placeholder {
+  color: var(--secondary-blue);
+}
+
+button {
+  border-radius: 2rem;
+  background-color: var(--primary-blue);
+  color: hsl(0, 0%, 100%);
+  padding: 0.7rem 2rem;
+  border: 0.1rem solid var(--secondary-blue);
+  font-size: 1rem;
+  font-weight: var(--fw-600);
+  box-shadow: 0.2rem 0.5rem 0.8rem var(--secondary-blue);
+}
+
+.preview {
+  padding-block: 2rem;
+}
