@@ -85,6 +85,7 @@ p {
 form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 input[type='email'] {
@@ -108,8 +109,39 @@ button {
   font-size: 1rem;
   font-weight: var(--fw-600);
   box-shadow: 0.2rem 0.5rem 0.8rem var(--secondary-blue);
+  cursor: pointer;
 }
+
+button:hover {
+  background-color: var(--secondary-blue);
+}
+
 
 .preview {
   padding-block: 2rem;
 }
+
+nav {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+a {
+}
+
+.ionicon {
+  display: inline;
+  /* border: 0.1rem solid var(--secondary-blue); */
+  /* border-radius: 50%; */
+  margin: 0 0.5rem;
+  height: 32px;
+  width: 30px;
+  fill: blue;
+  fill-rule: nonzero;
+}
+
+.footer-copy {
+  font-size: 1rem;
+  color: var(--neutral-gray);
+}
+
