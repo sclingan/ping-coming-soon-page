@@ -43,6 +43,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /*
 TODO: 
+   Add sr-only for accessibility
+   check all files for todo's
 */
 
 :Root {
@@ -126,9 +128,6 @@ nav {
   padding-bottom: 1rem;
 }
 
-a {
-}
-
 .ionicon {
   display: inline;
   /* border: 0.1rem solid var(--secondary-blue); */
@@ -136,8 +135,12 @@ a {
   margin: 0 0.5rem;
   height: 32px;
   width: 30px;
-  fill: blue;
+  fill: var(--primary-blue);
   fill-rule: nonzero;
+}
+
+.ionicon:hover {
+  transform: scale(1.3);
 }
 
 .footer-copy {

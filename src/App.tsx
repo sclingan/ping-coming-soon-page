@@ -4,6 +4,10 @@ import logo from '../public/images/logo.svg'
 import preview from '../public/images/illustration-dashboard.png'
 import './App.css'
 
+
+// TODO:
+    // check accessibilty for form 
+
 function App() {
 
   return (
@@ -14,10 +18,10 @@ function App() {
       <h2>We are launching soon!</h2>
       <p>Subscribe and get notified</p>
       <form>
-        <label></label>
-        <input type='email' placeholder='Your email address...'></input>
-        <label></label>
-        <button>Notify Me</button>
+        <label htmlFor='email'>Please enter your email address</label>
+        <input type='email' id='email' placeholder='Your email address...'></input>
+        <label htmlFor='submitEmail'>Submit Email</label>
+        <button id='submitEmail'>Notify Me</button>
       </form>
       <img src={preview} className='preview' alt='dashboard for Ping, showing graphs, checkmarks and page layout'></img>
       </main>
