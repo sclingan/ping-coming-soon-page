@@ -14,13 +14,13 @@ function App() {
     <div role='App container'>
       <main>
       <img src={logo} className='logo' alt=''></img>
-      {/* make an sr-only h1  */}
-      <h2>We are launching soon!</h2>
+      <h1 className='sr-only'>Ping Coming Soon Page</h1>
+      <h2>We are launching <strong>soon!</strong></h2>
       <p>Subscribe and get notified</p>
       <form>
-        <label htmlFor='email'>Please enter your email address</label>
+        <label htmlFor='email' className='sr-only'>Please enter your email address</label>
         <input type='email' id='email' placeholder='Your email address...'></input>
-        <label htmlFor='submitEmail'>Submit Email</label>
+        <label htmlFor='submitEmail' className='sr-only'>Submit Email</label>
         <button id='submitEmail'>Notify Me</button>
       </form>
       <img src={preview} className='preview' alt='dashboard for Ping, showing graphs, checkmarks and page layout'></img>
