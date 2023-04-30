@@ -11,7 +11,7 @@ import './App.css'
 function App() {
 
   return (
-    <div role='App container'>
+    <div>
       <main>
       <img src={logo} className='logo' alt=''></img>
       <h1 className='sr-only'>Ping Coming Soon Page</h1>

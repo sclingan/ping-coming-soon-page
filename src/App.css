@@ -162,3 +162,25 @@ nav {
   width: 1px;
 }
 
+@media (min-width: 50rem) {
+
+  form {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  input[type='email'] {
+    padding: 0.7rem 5rem;
+  }
+
+  .preview {
+    max-width: 41.25rem;
+    margin: 0 auto;
+  }
+}
