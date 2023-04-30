@@ -76,6 +76,7 @@ body {
 
 h2 {
   font-weight: var(--fw-300);
+  font-size: 1.8rem; /* check this */
   color: var(--neutral-gray);
 }
 
@@ -94,7 +95,7 @@ form {
   margin-bottom: 2rem;
 }
 
-input[type='email'] {
+.email {
   margin-block: 0.5rem;
   border-radius: 2rem;
   padding: 0.7rem 2rem;
@@ -102,8 +103,24 @@ input[type='email'] {
   font-size: 1rem;
 }
 
+.input-error {
+  border: 0.1rem solid var(--secondary-red);
+  margin-block: 0.5rem;
+  border-radius: 2rem;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+}
+
 ::placeholder {
   color: var(--secondary-blue);
+}
+
+.error {
+  font-size: 0.8rem;
+  color: var(--secondary-red);
+  font-weight: var(--fw-300);
+  padding-bottom: 1.5rem;
+  padding-top: 0;
 }
 
 button {
@@ -119,7 +136,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--secondary-blue);
+  transform: scale(1.05);
 }
 
 
@@ -144,7 +161,9 @@ nav {
 }
 
 .ionicon:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
+  background-color: var(--primary-blue);
+  fill: hsl(0, 0%, 100%);
 }
 
 .footer-copy {
