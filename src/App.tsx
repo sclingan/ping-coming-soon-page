@@ -21,6 +21,7 @@ function App() {
         <label htmlFor='email' className='sr-only'>Please enter your email address</label>
         <input type='email' className='email' id='email' placeholder='Your email address...'></input>
         <p className='sr-only' id='error-warning'>Please provide a valid email address</p>
+        <p className='sr-only' id='email-added'>Thank You, Your Email has been added!</p>
         <label htmlFor='submitEmail' className='sr-only'>Submit Email</label>
         <button id='submitEmail' onClick={validateForm}>Notify Me</button>
       </form>

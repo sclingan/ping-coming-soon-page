@@ -41,12 +41,6 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-/*
-TODO: 
-   Add sr-only for accessibility
-   check all files for todo's
-*/
-
 :Root {
   --primary-blue: hsl(223, 87%, 63%);
   --secondary-blue: hsl(223, 100%, 88%);
@@ -76,7 +70,7 @@ body {
 
 h2 {
   font-weight: var(--fw-300);
-  font-size: 1.8rem; /* check this */
+  font-size: 1.8rem; 
   color: var(--neutral-gray);
 }
 
@@ -139,7 +133,6 @@ button:hover {
   transform: scale(1.05);
 }
 
-
 .preview {
   padding-block: 2rem;
 }
@@ -196,10 +189,23 @@ nav {
 
   input[type='email'] {
     padding: 0.7rem 5rem;
+    position: relative;
   }
 
   .preview {
     max-width: 41.25rem;
     margin: 0 auto;
+  }
+
+  .error {
+    position: absolute;
+    top: 23rem;
+    margin-right: 20rem;
+  }
+
+  .email-added {
+    position: absolute;
+    top: 23rem;
+    margin-right: 12rem;
   }
 }
