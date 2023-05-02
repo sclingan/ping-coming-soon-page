@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/frontend-mentor-ping-coming-soon-challenge-LcG3msTuGA)
 - Live Site URL: (https://sclingan.github.io/ping-coming-soon-page)
 
 ## My process
